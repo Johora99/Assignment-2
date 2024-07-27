@@ -1,0 +1,61 @@
+@media screen and (max-width:576px) {
+   .nav-item{
+    display: none;
+   } 
+   .bar{
+    display: block;
+    width: 18px;
+    color: var(--white-primary);
+   }
+   .banner{
+    display: block;
+   }
+   .banner .banner-content{
+    width: 100%;
+  
+}
+.banner .banner-content .banner-title{
+font-size: 2.25rem;
+}
+.banner-title,.banner-sub-content{
+    width: 80%;
+}
+.btn{
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+.up{
+    top: 10%;
+    left: 60%;
+    padding: 0.7rem;
+}
+.up .up-number{
+font-size: 1.9rem;
+line-height: 1.9rem;
+letter-spacing: 0.05rem;
+} 
+.up .up-content{
+font-size: 0.6rem;
+line-height: 1rem;
+letter-spacing: 0.05rem;
+}
+.down{
+padding: 1rem;
+top: 45%;
+left: 0%;
+}
+.down .circle{
+    width: 1.9rem;
+    height: 1.9rem;
+}
+.down .sub-down .down-title{
+    font-size: 1.13rem;
+    line-height: 1.13rem;
+    letter-spacing: 0.01rem;
+}
+.down .sub-down .down-content{
+    font-size: 0.75rem;
+    line-height:1.13rem;
+    letter-spacing: 0.02rem;
+}
+}
