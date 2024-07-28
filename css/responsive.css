@@ -58,4 +58,29 @@ left: 0%;
     line-height:1.13rem;
     letter-spacing: 0.02rem;
 }
+.section-title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.habits .sub-habits{
+      display: block;
+}
+main .habits{
+    margin: 1rem auto;
+}
+main .run-extra .sub-run-extra{
+   display: block;
+
+}
+.run-extra .sub-run-extra .run-extra-content{
+    padding: 0rem
+}
+main .run-extra{
+    padding: 2rem;
+}
+.run-btn{
+    padding: 0.75rem 2rem !important;
+    margin-bottom: 1rem;
+    width: 100%;
+}
 }
