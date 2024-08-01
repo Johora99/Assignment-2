@@ -4,7 +4,7 @@
    } 
    .bar{
     display: block;
-    width: 18px;
+    font-size: 1.5rem ;
     color: var(--white-primary);
    }
    .banner{
@@ -14,8 +14,18 @@
     width: 100%;
   
 }
+
 .banner .banner-content .banner-title{
 font-size: 2.25rem;
+}
+.banner-img{
+    margin-top: 3rem;
+}
+br.shape{
+    display: block;
+}
+.span{
+    font-size: 4.25rem;
 }
 .banner-title,.banner-sub-content{
     width: 80%;
@@ -80,8 +90,12 @@ main .run-extra{
 }
 .run-btn{
     padding: 0.75rem 2rem !important;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     width: 100%;
+}
+.training-content{
+font-size: 0.7rem;
+
 }
 .sub-training .img-section-1 .img-1:nth-child(1){
    
@@ -215,7 +229,7 @@ main .health-progress .routine .routine-menu-1{
  }
 
 .sub-footer-title{
-margin-top: 1rem;
+margin: 1.5rem 0rem 2rem;
 }
 
 .copy .copy-content{
@@ -224,5 +238,7 @@ margin-top: 1rem;
 text-align: left;
 }
 
-
+br{
+    display: none;
+}
 }
