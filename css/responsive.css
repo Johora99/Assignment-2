@@ -22,7 +22,7 @@ font-size: 2.25rem;
 }
 .btn{
     font-size: 0.9rem;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1.5rem;
 }
 .up{
     top: 10%;
@@ -111,4 +111,118 @@ main .run-extra{
 .sub-training .img-section-2 .img-2:nth-child(3){
    display: none;
 }
+main .calculator{
+    width: 100%;
+    margin: auto;
+}
+main .calculator .sub-calculator-1{
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.sub-calculator-2 .BMI{
+    width: 80%;
+    margin: auto;
+   grid-template-columns: repeat(1 , 1fr);
+  
+}
+.sub-calculator-2 .BMI .calculator-chart{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.BMI-title{
+font-size: 1rem;
+}
+
+input ,select{
+    width: 48%;
+}
+select[name="factor"]{
+    width: 98%;
+}
+.cal-btn{
+  padding: 0.7rem 4rem;
+}
+main .our-team .team-members{
+    grid-template-columns: repeat(1 , 1fr);
+    margin-bottom: 3rem;
+}
+main .our-team .team-members .img img{
+    
+    height: 272px;
+   
+}
+main .our-team .team-members .img .img-title .img-title-1 {
+    display: inline-block;
+  vertical-align: middle;
+    width: 3.7rem;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+}
+
+main .our-team .team-content{
+    margin: 3rem auto;
+    text-align: center;
+    width: 100%;
+
+}
+main .our-team .team-members .img:nth-child(4),.img:nth-child(1){
+    display: none;
+}
+
+main .health-progress .sub-health-progress{
+    gap: 5rem;
+    display: block;
+}
+
+.more-btn{
+    width: 100%;
+    margin: 3rem auto;
+
+}
+
+main .health-progress .routine .routine-menu-1{
+   display: none;
+  
+
+} 
+
+
+ footer .footer-section .sub-footer-section{
+
+    grid-template-columns: repeat(1 , 1fr);
+ 
+    
+    
+ }
+ footer .footer-section .sub-footer-section .footer-section-1{
+    grid-column: 1 / -1;
+
+   
+ }
+ footer .footer-section .sub-footer-section .footer-section-2{
+  grid-column: 1 / -1; 
+  
+  justify-content: start;   
+   
+
+ }
+ footer .footer-section .sub-footer-section .footer-section-3{
+  grid-column:  1 / -1; 
+   
+    justify-content: start;   
+
+ }
+
+.sub-footer-title{
+margin-top: 1rem;
+}
+
+.copy .copy-content{
+    width: 80%;
+    margin: auto;
+text-align: left;
+}
+
+
 }

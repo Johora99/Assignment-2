@@ -10,20 +10,29 @@
     --gray-light:rgb(34, 34, 34);
     --black-primary:rgb(0, 0, 0);
     --white-light:rgb(250, 250, 249);
+    --white-primary-light:rgba(250, 250, 249, 0.7);
     --gray-primary:rgba(239, 237, 232, 0.65);
     --img-blur-1:rgba(6, 255, 210, 0.5);
     --img-blur-2:rgba(255, 0, 0, 0.3);
     --img-blur-3:rgba(0, 0, 0, 0.5);
     --img-blur-4:rgba(66, 255, 0, 0.3);
     --img-blur-5:rgba(0, 71, 255, 0.3);
+    --table-border-color:rgba(255, 255, 255, 0.1);
+    --black-light:rgba(48, 48, 48, 0.35);
+    --outline-color:rgb(26 ,26 , 26);
 }
-
+@font-face {
+    font-family:"Miama";
+    src: url("../font/Miama.woff");
+}
 /* common style start */
+
 .inter-font{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
+
 ul{
     list-style-type: none;
 }
@@ -36,8 +45,16 @@ a{
 }
 .common-size{
   max-width: 1440px;
-    width: 100%;
-       margin: auto;
+  width: 100%;
+  margin: auto;
+}
+.logo{
+    color: var(--tomato);
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 0%;
+
 }
 .btn{
 color:var(--white-primary);
@@ -49,14 +66,15 @@ border-radius: 2.6rem;
 background: var(--tomato);
 padding: 1rem 2.5rem;
 border: none;
+cursor: pointer;
 }
 .section-title{
     color: var(--white-primary);
     font-size: 3rem;
     font-weight: 900;
+    margin-bottom: 1rem;
     line-height: 120%;
     letter-spacing: 0%;
-    margin-bottom: 1rem;
 }
 .section-content{
     color: var(--white-primary);
@@ -74,12 +92,70 @@ line-height: 120%;
 letter-spacing: 0%;
 margin-bottom: 0.5rem;
 }
+.BMI-title{
+color: var(--white-primary);
+font-size: 1.75rem;
+font-weight: 900;
+line-height: 120%;
+letter-spacing: 0%;
+}
+table , tr ,th ,td {
+   border: 1px solid var(--table-border-color);
+    border-collapse: collapse;
+    margin-top: 2rem;
+    padding: 0.6rem;
+}
+th{
+    color: var(--white-primary);
+font-size: 1rem;
+font-weight: 500;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: left;
+}
+td{
+    color: var(--white-primary);
+    opacity: 0.5;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;    
+    text-align: left;
+}
+.run-btn{
+    margin-top: 2rem;
+    padding: 1rem 4rem;
+}
+.cal-btn{
+     margin-top: 1.5rem;
+    padding: 1rem 4rem;
+}
+.img-title{
+    color: var(--white-primary);
+font-size: 1.25rem;
+font-weight: 900;
+line-height: 120%;
+letter-spacing: 0%;
+
+}
+.img-content{
+    color: var(--white-primary);
+    opacity: 0.5;
+font-size: 0.9rem;
+font-weight: 400;
+line-height: 120%;
+letter-spacing: 0%;
+
+}
+.low{
+    font-size: 1.2rem;
+    text-align: right;
+}
 /* common style end */    
 
 /* header section start */
 header{
   background: black;
- 
     overflow: hidden;
 }
 header .blare{
@@ -99,17 +175,10 @@ header .blare{
 .nav-area .nav{
     justify-content: space-between;
 }
-.nav-logo .logo{
-    color: var(--tomato);
-    font-size: 2.25rem;
-    font-weight: 800;
-    line-height: 120%;
-    letter-spacing: 0%;
-
-}
+ 
 .nav-item .nav-items{
   gap: 3rem;
-border: 1px solid rgba(255, 255, 255, 0.1);
+border: 1px solid var(--table-border-color);
 border-radius: 2.43rem; 
 }
 .nav-items .nav-list .nav-link{
@@ -144,10 +213,16 @@ border-radius: 2.43rem;
 }
 .banner .banner-content .banner-title{
     color:var(--white-primary);
-    font-size: 78px;
+    font-size: 4.9rem;
     font-weight: 900;
     line-height: 120%;
     letter-spacing: 0%;    
+}
+.span{
+     font-family:"Miama";
+     font-weight: 400;
+     font-size: 9.4rem;
+
 }
 .banner .banner-content .banner-sub-content{
     color: var(--white-primary);
@@ -171,10 +246,10 @@ border-radius: 2.43rem;
     top: 23%;
     left: 65%;
     width: max-content;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--table-border-color);
     border-radius: 0.75rem;
     backdrop-filter: blur(20px);
-   background-color: rgba(255, 255, 255, 0.1);
+   background-color: var( --table-border-color);
     padding: 1rem;
 }
 .up .up-number{
@@ -182,11 +257,12 @@ border-radius: 2.43rem;
 font-size: 2.5rem;
 font-weight: 900;
 line-height: 2.5rem;
-letter-spacing: 1px;
+letter-spacing: 0.06rem;
  margin-bottom: 0.3rem;
 } 
 .up .up-content{
-    color: rgba(255, 255, 255, 0.65);
+    color: var(--white-primary);
+    opacity: 0.65;
 font-size: 0.8rem;
 font-weight: 400;
 line-height: 1.25rem;
@@ -195,10 +271,10 @@ letter-spacing: 0.06rem;
 .down{
   gap: 1rem;
   width: max-content;
-border: 1px solid rgba(255, 255, 255, 0.1);
+border: 1px solid var(--table-border-color);
 border-radius: 0.75rem;
 backdrop-filter: blur(20px);
-background: rgba(48, 48, 48, 0.35);
+background: var(--black-light);
 padding: 1.25rem;
 position: absolute;
 top: 72%;
@@ -215,7 +291,7 @@ left: -30%;
     font-size: 1.5rem;
     font-weight: 900;
     line-height: 1.5rem;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.02rem;
     margin-bottom: 0.3rem;
 }
 .down .sub-down .down-content{
@@ -223,7 +299,7 @@ left: -30%;
     font-size: 1rem;
     font-weight: 400;
     line-height:1.5rem;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.03rem;
 }
 
 
@@ -247,9 +323,12 @@ main .habits{
 .habits .sub-habits{
     gap: 1rem;
 }
+
 .habits .sub-habits .exercise img{
     border-radius: 50%;
     margin: 2rem auto 1rem;
+    border:1px dotted var(--white-primary-light) ;
+    outline: 0.3rem solid var(--outline-color);
     
 }
 /* habits section end */
@@ -260,7 +339,6 @@ main .run-extra{
     margin: 5rem auto;
     border-radius: 1.125rem;
     background: var( --gray-light);
-    /* padding: 2rem; */
     padding-right: 2.5rem;
 }
 main .run-extra .sub-run-extra{
@@ -275,10 +353,7 @@ main .run-extra .sub-run-extra{
     height: 100%;
     border-radius: 1.125rem;
 }
-.sub-run-extra .run-extra-content .run-btn{
-    margin-top: 2rem;
-    padding: 1rem 4rem;
-}
+
 /* run-extra section end */
 /* training section start */
 main .training{
@@ -347,7 +422,7 @@ main .training .sub-training{
 .sub-training .img-section-2{
     display: grid;
     grid-template-columns: repeat(12 , 1fr);
-     grid-template-rows: repeat(4 , 1fr);
+     grid-template-rows: repeat(1 , 1fr);
 }
 .sub-training .img-section-2 .img-2:nth-child(1){
     position: relative;
@@ -408,15 +483,251 @@ main .training .sub-training{
     object-fit: cover;
 }
 
-
-
-
-
-
-
-
-
 /* training section end */
 
+/* calculator section start */
+
+main .calculator{
+    width: 100%;
+    margin: auto;
+}
+main .calculator .sub-calculator-1{
+    width: 45%;
+    margin: 4rem auto;
+}
+main .calculator .sub-calculator-2{
+    background-color: var(--gray-light);
+    margin: auto;
+    padding: 3rem 0rem;
+}
+.sub-calculator-2 .BMI{
+    width: 80%;
+    margin: auto;
+    /* gap: 5rem; */
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+.BMI-content{
+    margin: 1rem auto 1.5rem;
+}
+input ,select{
+   padding: 0.75rem 2.5rem 0.75rem 1.25rem;
+    width: 49%;
+    border-radius: 0.5rem;
+    background: var(--table-border-color);
+    border: none;
+    margin-bottom: 0.5rem;    
+}
+input[type="number"]:nth-child(odd){
+    margin-right: 0.2rem;
+}
+input::placeholder ,select ,option{
+   color: var(--white-primary);
+   opacity: 0.6;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    letter-spacing: 0px; 
+}
+select[name="factor"]{
+    width: 99%;
+}
+
+/* calculator section end */
+/* our team start */
+main .our-team{
+    width: 80%;
+    margin: auto;
+   
+}
+main .our-team .team-content{
+    margin: 3rem auto;
+    text-align: center;
+    width: 45%;
+
+}
+main .our-team .team-members{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+     background-color:var( --gray-light) ;
+     gap: 1rem;
+    border-radius: 1.125rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    
+
+}
+
+main .our-team .team-members .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+     border-radius: 1.125rem;
+   
+}
+main .our-team .team-members .img{
+    position: relative;
+}
+.img .img-title{
+    position: absolute;
+    top: 82%;
+    left: 10%;
+}
+.img .img-content{
+    position: absolute;
+    top: 90%;
+    left: 10%;
+}
+/* our team end */
+/* health progress section start */
+main .health-progress{
+    width: 80%;
+    margin: 0rem auto 3rem;
+    background-color: var(--gray-light);
+    padding: 2rem;
+    border-radius: 1.125rem ;
+}
+main .health-progress .sub-health-progress{
+    gap: 5rem;
+}
+main .health-progress .discover-health{
+    text-align: center;
+} 
+hr{
+   margin: 3rem auto 2rem;
+   width: 50%;
+   color: black;
+   background-color: black;
+}
+.more-btn{
+    width: 100%;
+    margin-top: 6rem;
+
+}
+main .health-progress .routine{
+    position: relative;
+}
+main .health-progress .routine .routine-menu-1{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    background-color: var(--tomato);
+    padding: 1rem;
+    border-radius: 1.125rem;
+    border: 3px solid var(--gray-primary);
+
+} 
+main .health-progress .routine img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.125rem;
+}
+main .health-progress .routine .routine-menu-1 .low{
+    color: var(--gray-primary);
+}
+main .health-progress .routine .routine-menu-2{
+    position: absolute;
+    background-color: var(--gray-light);
+    border-radius: 1.125rem;
+    top: 40%;
+    left: 5%;
+    padding: 1rem;
+    border: 3px solid var(--tomato);
+}
+main .health-progress .routine .routine-menu-2 .routine-title{
+    color: var(--gray-primary);
+}
+main .health-progress .routine .routine-menu-2 .menu-list{
+
+ gap: 1rem;
+}
+
+.menu-list .menu-item{
+    border: 1px solid var(--tomato);
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+.menu-list .menu-item .menu-link{
+    color: var(--white-light);
+}
+
+/* health progress section end */
 
 /* main end */
+/* footer section star */
+ footer{
+    background-color: var(--black-primary);
+   }
+ footer .footer-section{
+  background: var(--table-border-color);
+ }
+ footer .footer-section .sub-footer-section{
+    width: 80%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(12 , 1fr);
+    padding: 3rem 0rem;
+    
+    
+ }
+ footer .footer-section .sub-footer-section .footer-section-1{
+    grid-column: 1 / 7;
+
+   
+ }
+ footer .footer-section .sub-footer-section .footer-section-2{
+  grid-column: 7 / 10; 
+  
+  justify-content: end;   
+   
+
+ }
+ footer .footer-section .sub-footer-section .footer-section-3{
+  grid-column: 10 / 13; 
+   
+    justify-content: end;   
+
+ }
+footer .footer-section .footer-title{
+    font-size: 4.4rem;
+    margin-bottom: 2rem;
+}
+.sub-footer-title{
+ color: var(--white-primary);
+font-size: 2rem;
+font-weight: 700;
+line-height: 120%;
+letter-spacing: 0%;
+}
+.footer-list{
+    margin: 0.6rem 0rem;
+}
+.footer-link{
+    color: var(--white-primary);
+    opacity: 0.5;
+font-size: 1.4rem;
+font-weight: 400;
+line-height: 120%;
+letter-spacing: 0%;
+}
+.footer-hr{
+    width: 80%;
+    margin: auto;
+   border: 2px solid var(--table-border-color); 
+}
+.copy .copy-content{
+    color: var(--white-primary);
+    opacity: 0.5;
+font-size: 1.25rem;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.02rem;
+text-align: center;
+padding: 2rem 0rem;
+}
+
+
+/* footer section end */
