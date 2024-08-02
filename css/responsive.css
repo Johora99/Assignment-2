@@ -183,7 +183,18 @@ main .our-team .team-content{
 main .our-team .team-members .img:nth-child(4),.img:nth-child(1){
     display: none;
 }
-
+main .our-team .team-members .img:nth-child(2){
+    order: 2;
+}
+main .our-team .team-members .img:nth-child(3){
+    order: 4;
+}
+main .our-team .team-members .img:nth-child(5){
+    order: 3;
+}
+main .our-team .team-members .img:nth-child(6){
+    order: 5;
+}
 main .health-progress .sub-health-progress{
     gap: 5rem;
     display: block;
