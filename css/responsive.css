@@ -93,6 +93,12 @@ main .run-extra{
     margin-bottom: 1.5rem;
     width: 100%;
 }
+.img-section img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.125rem;
+}
+
 .training-content{
 font-size: 0.7rem;
 
